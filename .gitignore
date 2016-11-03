@@ -1,3 +1,6 @@
 Keylogger/Keylogger.VC.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.sln
 *.db
 Keylogger/Keylogger/Debug/Keylogger.tlog/CL.write.1.tlog
