@@ -1,0 +1,10 @@
+- Create x86 and x64 builds
+- Create a wrapper which determines the system architecture (x86 or x64) and executes the keylogger
+- Run the keylogger as a windows service
+- Server and client 
+- Handle the clipboard (copy & paste)
+- Capture auto-complete fields from known web browsers
+- Fix try & catch statements
+- Fix stderr
+
+
