@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="configuration.conf">
-      <Filter>Source Files</Filter>
-    </None>
     <None Include="aasd.py">
       <Filter>Source Files</Filter>
     </None>
